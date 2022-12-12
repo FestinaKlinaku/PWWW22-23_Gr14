@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 26" width="148" height="26">
+	<title>TrekParadise</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 27px;line-height: 50px;text-decoration: underline;fill: #000000;font-weight: 900;font-style: italic;font-family: "Roboto-BlackItalic", "Roboto" } 
+	</style>
+	<text id="TrekParadise" style="transform: matrix(1.003,0,0,.966,.715,20)" >
+		<tspan x="0" y="0" class="t0" dx="0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1" >TrekParadise
+</tspan>
+	</text>
+</svg>
