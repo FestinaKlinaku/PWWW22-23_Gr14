@@ -1,0 +1,17 @@
+body {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.container {
+    padding: 0 360px;
+    @include tablet {
+        padding: 0 100px;
+    }
+    @include mobile {
+        padding: 0 20px;
+    }
+    @include screen {
+        padding: 0 240px;
+    }
+}

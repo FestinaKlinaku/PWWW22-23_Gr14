@@ -1,0 +1,46 @@
+.banner {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .change-banner {
+        padding: 0 260px;
+        padding-top: 170px;
+        padding-bottom: 170px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        h1 {
+            font-size: 106px;
+            letter-spacing: -4px;
+            line-height: 106px;
+            color: $neutralMax;
+            font-weight: 900;
+            font-family: $defaultFont;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 25px;
+            line-height: 35px;
+            color: $neutralMax;
+            font-family: "Lora";
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .btn {
+            width: 200px;
+            height: 60px;
+            border: none;
+            font-size: 18px;
+            line-height: 53px;
+            color: #343434;
+            font-weight: 700;
+            font-family: "Lora";
+            text-align: center;
+        }
+        .btn--primary {
+            background-color: $accent3;
+        }
+    }
+}
