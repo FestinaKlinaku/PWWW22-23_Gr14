@@ -1,0 +1,46 @@
+.reviews {
+    padding-top: 170px;
+    padding-bottom: 170px;
+    background-color: $accent2;
+    h2 {
+        @include heading;
+        padding-bottom: 80px;
+    }
+    .reviews__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .reviews__text {
+        background-color: $neutralMax;
+        padding: 60px;
+        margin-top: -20px;
+        blockquote {
+            font-size: 20px;
+            line-height: 34px;
+            color: #111111;
+            font-family: "Lora";
+            text-align: center;
+            padding-bottom: 20px;
+            &::after {
+                content: url(../images/stars.svg);
+                display: block;
+                padding-top: 20px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #3a5065;
+            font-weight: 400;
+            font-family: $defaultFont;
+            text-align: center;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+                font-family: "Lora";
+            }
+        }
+    }
+}

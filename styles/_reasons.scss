@@ -1,0 +1,65 @@
+.reasons {
+    padding-bottom: 170px;
+    background-image: url('../images/bg-why.png');
+    h2 {
+        @include heading;
+        color: $accent2;
+        padding-bottom: 80px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "a b c c"
+            "d e c c";
+        grid-gap: 40px;
+        .reason {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            h4 {
+                font-size: 20px;
+                line-height: 22px;
+                color: #111111;
+                font-weight: 500;
+                font-family: "Roboto";
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: #383838;
+                font-family: "Lora";
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 52px;
+                color: #3a5065;
+                font-weight: 700;
+                font-family: "Lora";
+            }
+        }
+        .area-a {
+            grid-area: a;
+        }
+        .area-b {
+            grid-area: b;
+        }
+        .area-e {
+            grid-area: e;
+        }
+        .area-d {
+            grid-area: d;
+        }
+        .reasons__photo {
+            grid-area: c;
+        }
+    }
+}

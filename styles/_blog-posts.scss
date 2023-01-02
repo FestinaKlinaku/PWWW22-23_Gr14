@@ -1,0 +1,25 @@
+.blog-posts {
+    margin-top: -200px;
+    padding-bottom: 500px;
+    background-image: url('../images/bg-blog.png');
+    background-size: 100%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    h2 {
+        @include heading;
+        color: $neutralMin;
+        padding-bottom: 80px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    button {
+        @include button;
+        background-color: transparent;
+        color: $accent3;
+        border: 2px solid $accent3;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}

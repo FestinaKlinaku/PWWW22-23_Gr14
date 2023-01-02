@@ -1,0 +1,18 @@
+.recommendations {
+    padding: 170px 0;
+    padding-bottom: 340px;
+    h2 {
+        @include heading;
+        color: $neutralMin;
+        padding-bottom: 80px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 20px;
+        .img-wrapper {
+            background-color: $neutralMax;
+            padding: 40px 30px;
+        }
+    }
+}
