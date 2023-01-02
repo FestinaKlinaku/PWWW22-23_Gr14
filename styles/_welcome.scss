@@ -1,0 +1,52 @@
+.welcome {
+    padding: 170px 0;
+    background-color: $accent1;
+    .container {
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .welcome__title {
+                width: 45%;
+                position: relative;
+                h2 {
+                    font-size: 71px;
+                    line-height: 81px;
+                    color: #111111;
+                    font-weight: 500;
+                    font-family: $defaultFont;
+                    text-align: right;
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        background-color: $neutralMin;
+                        width: 50px;
+                        height: 6px;
+                    }
+                }
+            }
+            .welcome__content {
+                width: 50%;
+                p {
+                    font-size: 18px;
+                    line-height: 35px;
+                    color: $accent2;
+                    font-family: $specialFont;
+                    margin-bottom: 40px;
+                }
+                span {
+                    font-weight: 700;
+                }
+                .btn {
+                    @include button;
+                }
+                .btn--special {
+                    background-color: transparent;
+                    border: 2px solid $neutralMin;
+                }
+            }
+        }
+    }
+}

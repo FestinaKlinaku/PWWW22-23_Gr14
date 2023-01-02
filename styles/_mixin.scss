@@ -15,3 +15,24 @@
     @content;
   }
 }
+
+@mixin button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 53px;
+    color: #343434;
+    font-weight: 700;
+    font-family: $specialFont;
+    text-align: center;
+}
+
+@mixin heading {
+    font-size: 51px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: $defaultFont;
+    text-align: center;
+}
