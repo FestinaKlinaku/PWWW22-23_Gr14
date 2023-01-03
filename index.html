@@ -28,8 +28,9 @@
                         <li class="main-nav__item dropdown"><a href="#">Activities <i class="fa fa-angle-down"></i></a></li>
                         <li class="main-nav__item"><a href="#blog">Blog</a></li>
                         <li class="main-nav__item"><a href="#contact">Contact Us</a></li>
-                        <li class="main-nav__item">
-                            <i class="fas fa-search"></i>
+                        <li class="main-nav__item search">
+                            <input type="text" placeholder="Search...">
+                            <a class="searchIcon"><i class="fas fa-search"></i></a>
                         </li>
                 </ul>
             </div>
@@ -371,5 +372,13 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        const search = document.querySelector('.search');
+        const searchIcon = document.querySelector('.searchIcon');
+        searchIcon.addEventListener('click', () => {
+            search.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

@@ -5,19 +5,57 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         .main-nav {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             column-gap: 40px;
-            .main-nav__item a {
-                text-decoration: none;
-                font-size: 18px;
-                color: #3a5065;
-                font-family: "Lora";
-                i {
-                    font-size: 15px;
-                    color: #797979;
+            .main-nav__item {
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #3a5065;
+                    font-family: $specialFont;
+                    i {
+                        font-size: 15px;
+                        color: #797979;
+                        cursor: pointer;
+                    }
+                    &:hover {
+                        color: $neutralMin;
+                        i {
+                            color: $neutralMin;
+                        }
+                    }
+                }
+            }
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 8px;
+                width: 0px;
+                input[type='text'] {
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    color: #919191;
+                    font-family: $specialFont;
+                    padding: 0;
+                    background: transparent;
+                    width: 0px;
+                    transition: 0.5s;
+                }
+                transition: width 0.5s;
+            }
+            .search.active {
+                background: white;
+                padding: 10px;
+                width: 200px;
+                input[type='text'] {
+                    width: 200px;
+                    padding: 5px 0;
                 }
             }
         }
