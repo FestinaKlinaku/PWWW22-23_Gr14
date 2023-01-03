@@ -36,4 +36,15 @@
     font-weight: 500;
     font-family: $defaultFont;
     text-align: center;
+    &::before {
+      content: '';
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -40px;
+      width: 4px;
+      height: 50px;
+      background-color: black;
+    }
 }

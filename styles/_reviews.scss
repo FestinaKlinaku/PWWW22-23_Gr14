@@ -5,6 +5,9 @@
     h2 {
         @include heading;
         padding-bottom: 80px;
+        &::before {
+            background-color: white;
+        }
     }
     .reviews__images {
         display: flex;
