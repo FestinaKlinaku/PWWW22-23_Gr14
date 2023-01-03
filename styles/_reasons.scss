@@ -1,6 +1,6 @@
 .reasons {
-    padding-bottom: 170px;
-    background-image: url('../images/bg-why.png');
+    padding-bottom: 100px;
+    background-image: url('../images/bg-reasons.png');
     h2 {
         @include heading;
         color: $accent2;
@@ -24,7 +24,7 @@
                 line-height: 22px;
                 color: #111111;
                 font-weight: 500;
-                font-family: "Roboto";
+                font-family: $defaultFont;
                 text-align: center;
                 padding-top: 20px;
                 padding-bottom: 10px;
@@ -33,7 +33,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #383838;
-                font-family: "Lora";
+                font-family: $specialFont;
                 text-align: center;
                 padding-bottom: 10px;
             }
@@ -43,7 +43,10 @@
                 line-height: 52px;
                 color: #3a5065;
                 font-weight: 700;
-                font-family: "Lora";
+                font-family: $specialFont;
+                &:hover {
+                    color: $neutralMin;
+                }
             }
         }
         .area-a {

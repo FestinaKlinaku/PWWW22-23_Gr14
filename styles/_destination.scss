@@ -22,7 +22,7 @@
                 text-transform: uppercase;
                 color: #111111;
                 font-weight: 500;
-                font-family: "Roboto";
+                font-family: $defaultFont;
                 text-align: center;
                 padding-top: 20px;
             }
@@ -32,8 +32,11 @@
                 line-height: 52px;
                 color: #3a5065;
                 font-weight: 700;
-                font-family: "Lora";
+                font-family: $specialFont;
                 text-align: center;
+                &:hover {
+                    color: $neutralMin;
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 .recommendations {
     padding: 170px 0;
-    padding-bottom: 340px;
+    padding-bottom: 370px;
     h2 {
         @include heading;
         color: $neutralMin;
@@ -12,7 +12,9 @@
         column-gap: 20px;
         .img-wrapper {
             background-color: $neutralMax;
-            padding: 40px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

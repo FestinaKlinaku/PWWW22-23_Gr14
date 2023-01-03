@@ -33,11 +33,16 @@
             input {
                 padding: 0 30px;
                 border: none;
+                outline: none;
                 font-size: 14px;
                 line-height: 53px;
                 color: #919191;
-                font-family: "Lora";
+                font-family: $specialFont;
                 width: 60%;
+                &::placeholder {
+                    font-family: $specialFont, FontAwesome;
+                    color: #d3d3d3;
+                }
             }
             button {
                 padding: 0 30px;
@@ -47,7 +52,7 @@
                 text-transform: uppercase;
                 color: #e7d5ad;
                 font-weight: 700;
-                font-family: "Lora";
+                font-family: $specialFont;
                 background: $accent2;
             }
         }

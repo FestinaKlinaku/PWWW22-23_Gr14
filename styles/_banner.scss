@@ -33,6 +33,9 @@
         }
         .btn--primary {
             background-color: $accent3;
+            &:hover {
+                background-color: $neutralMax;
+            }
         }
     }
 }

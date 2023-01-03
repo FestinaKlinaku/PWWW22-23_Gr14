@@ -60,6 +60,11 @@ body {
   background-color: #fef8ec;
 }
 
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
 .container {
   padding: 0 360px;
 }
@@ -208,9 +213,13 @@ body {
   font-weight: 700;
   font-family: "Lora", sans-serif;
   text-align: center;
+  cursor: pointer;
 }
 .banner .change-banner .btn--primary {
   background-color: #e7d5ad;
+}
+.banner .change-banner .btn--primary:hover {
+  background-color: #FFFFFF;
 }
 
 .welcome {
@@ -266,15 +275,21 @@ body {
   font-weight: 700;
   font-family: "Lora", sans-serif;
   text-align: center;
+  cursor: pointer;
 }
 .welcome .container .flex-container .welcome__content .btn--special {
   background-color: transparent;
   border: 2px solid #000000;
 }
+.welcome .container .flex-container .welcome__content .btn--special:hover {
+  background-color: #000000;
+  color: #fef8ec;
+  border: none;
+}
 
 .featured-packages {
   padding: 170px 0;
-  padding-bottom: 270px;
+  padding-bottom: 340px;
   background-color: #0b131d;
   background-image: url("../images/bg-packages.png");
   background-size: 100%;
@@ -297,16 +312,23 @@ body {
        column-gap: 20px;
   row-gap: 60px;
 }
-.featured-packages .grid-container .package-border {
-  background-color: #5f5d54;
-  -webkit-clip-path: polygon(0 0, 10% 0, 100% 0, 100% 10%, 100% 90%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
-          clip-path: polygon(0 0, 10% 0, 100% 0, 100% 10%, 100% 90%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
-}
 .featured-packages .grid-container .package {
-  background-color: #0b131d;
+  /* background: linear-gradient(135deg, transparent 30px, #ddd, 0);
   margin: 1px;
-  -webkit-clip-path: polygon(0 0, 10% 0, 100% 0, 100% 10%, 100% 90%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
-          clip-path: polygon(0 0, 10% 0, 100% 0, 100% 10%, 100% 90%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(
+      0 0,
+      10% 0,
+      100% 0,
+      100% 10%,
+      100% 90%,
+      90% 100%,
+      0% 100%,
+      0% 90%,
+      0% 10%
+  ); */
+}
+.featured-packages .grid-container .package svg {
+  position: absolute;
 }
 .featured-packages .grid-container .package img {
   width: 100%;
@@ -314,6 +336,8 @@ body {
   padding-top: -10px;
   padding-left: -10px;
   padding-right: -10px;
+  position: relative;
+  z-index: 999;
 }
 .featured-packages .grid-container .booking-info {
   display: flex;
@@ -333,6 +357,12 @@ body {
   color: #e7d5ad;
   font-weight: 700;
   font-family: "Lora", sans-serif;
+}
+.featured-packages .grid-container .booking-info span:last-child::before {
+  content: "$";
+  font-size: 14px;
+  position: relative;
+  bottom: 6px;
 }
 .featured-packages .grid-container h4 {
   font-size: 18px;
@@ -362,9 +392,16 @@ body {
   font-weight: 700;
   font-family: "Lora", sans-serif;
   text-align: center;
+  cursor: pointer;
   background-color: #3a5065;
   color: #e7d5ad;
   margin: 0 30px;
+  position: relative;
+  z-index: 2;
+}
+.featured-packages .grid-container .btn--reverse:hover {
+  background-color: #e7d5ad;
+  color: #3a5065;
 }
 
 .destinations {
@@ -399,7 +436,7 @@ body {
   text-transform: uppercase;
   color: #111111;
   font-weight: 500;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 20px;
 }
@@ -409,13 +446,16 @@ body {
   line-height: 52px;
   color: #3a5065;
   font-weight: 700;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
   text-align: center;
+}
+.destinations .grid-container .destination a:hover {
+  color: #000000;
 }
 
 .reasons {
-  padding-bottom: 170px;
-  background-image: url("../images/bg-why.png");
+  padding-bottom: 100px;
+  background-image: url("../images/bg-reasons.png");
 }
 .reasons h2 {
   font-size: 51px;
@@ -445,7 +485,7 @@ body {
   line-height: 22px;
   color: #111111;
   font-weight: 500;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -454,7 +494,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #383838;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -464,7 +504,10 @@ body {
   line-height: 52px;
   color: #3a5065;
   font-weight: 700;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
+}
+.reasons .grid-container .reason a:hover {
+  color: #000000;
 }
 .reasons .grid-container .area-a {
   grid-area: a;
@@ -503,6 +546,10 @@ body {
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
+.reviews .reviews__images img:nth-child(4) {
+  background-color: pink;
+  border: 4px solid #FFFFFF;
+}
 .reviews .reviews__text {
   background-color: #FFFFFF;
   padding: 60px;
@@ -537,7 +584,7 @@ body {
 
 .recommendations {
   padding: 170px 0;
-  padding-bottom: 340px;
+  padding-bottom: 370px;
 }
 .recommendations h2 {
   font-size: 51px;
@@ -557,13 +604,15 @@ body {
 }
 .recommendations .grid-container .img-wrapper {
   background-color: #FFFFFF;
-  padding: 40px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-posts {
   margin-top: -200px;
   padding-bottom: 500px;
-  background-image: url("../images/bg-blog.png");
+  background-image: url("../images/bg-blog.png"), linear-gradient(180deg, #fef8ec 20%, #0b131d 20%);
   background-size: 100%;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -581,6 +630,50 @@ body {
 .blog-posts .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.blog-posts .grid-container .post svg {
+  position: absolute;
+}
+.blog-posts .grid-container .post img {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: -10px;
+  padding-left: -10px;
+  padding-right: -10px;
+  position: relative;
+  z-index: 999;
+}
+.blog-posts .grid-container .post h4 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 0 30px;
+}
+.blog-posts .grid-container .post p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #cdcdcd;
+  font-family: "Lora", sans-serif;
+  padding: 0 30px;
+  padding-bottom: 20px;
+}
+.blog-posts .grid-container .post .author-info p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.blog-posts .grid-container .post .author-info p span {
+  color: #e7d5ad;
 }
 .blog-posts button {
   width: 200px;
@@ -592,11 +685,19 @@ body {
   font-weight: 700;
   font-family: "Lora", sans-serif;
   text-align: center;
+  cursor: pointer;
   background-color: transparent;
   color: #e7d5ad;
   border: 2px solid #e7d5ad;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog-posts button:hover {
+  background-color: #e7d5ad;
+  color: #0b131d;
 }
 
 .subscription {
@@ -637,11 +738,24 @@ body {
 .subscription .flex-container .subscription__form input {
   padding: 0 30px;
   border: none;
+  outline: none;
   font-size: 14px;
   line-height: 53px;
   color: #919191;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
   width: 60%;
+}
+.subscription .flex-container .subscription__form input::-moz-placeholder {
+  font-family: "Lora", sans-serif, FontAwesome;
+  color: #d3d3d3;
+}
+.subscription .flex-container .subscription__form input:-ms-input-placeholder {
+  font-family: "Lora", sans-serif, FontAwesome;
+  color: #d3d3d3;
+}
+.subscription .flex-container .subscription__form input::placeholder {
+  font-family: "Lora", sans-serif, FontAwesome;
+  color: #d3d3d3;
 }
 .subscription .flex-container .subscription__form button {
   padding: 0 30px;
@@ -651,7 +765,7 @@ body {
   text-transform: uppercase;
   color: #e7d5ad;
   font-weight: 700;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
   background: #3a5065;
 }
 .subscription .flex-container .subscription__image {

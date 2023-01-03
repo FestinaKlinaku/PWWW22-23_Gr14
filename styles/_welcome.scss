@@ -45,6 +45,11 @@
                 .btn--special {
                     background-color: transparent;
                     border: 2px solid $neutralMin;
+                    &:hover {
+                        background-color: $neutralMin;
+                        color: $accent1;
+                        border: none;
+                    }
                 }
             }
         }

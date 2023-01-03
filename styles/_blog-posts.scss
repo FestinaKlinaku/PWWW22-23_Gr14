@@ -1,7 +1,7 @@
 .blog-posts {
     margin-top: -200px;
     padding-bottom: 500px;
-    background-image: url('../images/bg-blog.png');
+    background-image:  url('../images/bg-blog.png'), linear-gradient(180deg, $accent1 20%, #0b131d 20%);
     background-size: 100%;
     background-position-y: bottom;
     background-repeat: no-repeat;
@@ -13,13 +13,66 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        .post {
+            svg {
+                position: absolute;
+            }
+            img {
+                width: 100%;
+                padding-bottom: 20px;
+                padding-top: -10px;
+                padding-left: -10px;
+                padding-right: -10px;
+                position: relative;
+                z-index: 999;
+            }
+            h4 {
+                font-size: 20px;
+                line-height: 26px;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: $defaultFont;
+                padding: 0 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                color: #cdcdcd;
+                font-family: $specialFont;
+                padding: 0 30px;
+                padding-bottom: 20px;
+            }
+            .author-info {
+                p {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    align-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    font-size: 14px;
+                    padding-top: 20px;
+                    span {
+                        color: $accent3;
+                    }
+                }
+            }
+        }
     }
     button {
         @include button;
         background-color: transparent;
         color: $accent3;
         border: 2px solid $accent3;
-        margin-top: 40px;
-        margin-bottom: 80px;
+        margin-top: 80px;
+        margin-bottom: 120px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+            background-color: $accent3;
+            color: #0b131d;
+        }
     }
 }
