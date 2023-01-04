@@ -19,6 +19,11 @@
                 background-color: pink;
                 border: 4px solid $neutralMax;
             }
+            &:hover {
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+                cursor: pointer;
+            }
         }
     }
     .reviews__text {

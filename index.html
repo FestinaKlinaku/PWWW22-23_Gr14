@@ -267,11 +267,11 @@
             <div class="container">
                 <h2>Recent Reviews</h2>
                 <div class="reviews__images">
-                    <img src="./images/reviews-1.png" alt="">
-                    <img src="./images/reviews-2.png" alt="">
-                    <img src="./images/reviews-3.png" alt="">
-                    <img src="./images/reviews-4.png" alt="">
-                    <img src="./images/reviews-5.png" alt="">
+                    <img src="./images/reviews-1.png" alt="1" onclick="tabMove(this)">
+                    <img src="./images/reviews-2.png" alt="2" onclick="tabMove(this)">
+                    <img src="./images/reviews-3.png" alt="3" onclick="tabMove(this)">
+                    <img src="./images/reviews-4.png" alt="4" onclick="tabMove(this)">
+                    <img src="./images/reviews-5.png" alt="5" onclick="tabMove(this)">
                 </div>
                 <div class="reviews__text">
                     <blockquote>
@@ -280,7 +280,7 @@
                     <p>
                         <span>Mark Squirrel</span>
                         <br>
-                        Switzerland
+                        <p id="city">Switzerland</p>
                     </p>
                 </div>
             </div>
@@ -290,19 +290,19 @@
                 <h2>Recommeded By</h2>
                 <div class="grid-container">
                     <div class="img-wrapper">
-                        <img src="./images/logo-rec-1.png" alt="">
+                        <img src="./images/logo-rec-1.png">
                     </div>
                     <div class="img-wrapper">
-                        <img src="./images/logo-rec-2.png" alt="">
+                        <img src="./images/logo-rec-2.png">
                     </div>
                     <div class="img-wrapper">
-                        <img src="./images/logo-rec-3.png" alt="">
+                        <img src="./images/logo-rec-3.png">
                     </div>
                     <div class="img-wrapper">
-                        <img src="./images/logo-rec-4.png" alt="">
+                        <img src="./images/logo-rec-4.png">
                     </div>
                     <div class="img-wrapper">
-                        <img src="./images/logo-rec-5.png" alt="">
+                        <img src="./images/logo-rec-5.png">
                     </div>
                 </div>
             </div>
@@ -474,5 +474,6 @@
             search.classList.toggle('active');
         })
     </script>
+    <script src="./js/tabs.js"></script>
 </body>
 </html>

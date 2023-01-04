@@ -606,6 +606,11 @@ body {
   background-color: pink;
   border: 4px solid #FFFFFF;
 }
+.reviews .reviews__images img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
 .reviews .reviews__text {
   background-color: #FFFFFF;
   padding: 60px;
@@ -674,6 +679,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.recommendations .grid-container .img-wrapper:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .blog-posts {
