@@ -60,17 +60,34 @@
     </header>
     <main>
         <section class="banner">
-            <div class="container">
-                <div class="change-banner">
-                    <h1>Trek More, Worry Less</h1>
-                    <p>
-                        The journey of a thousand miles begins with a single step.
-                    </p>
-                    <form action="booking.html">
-                        <button class="btn btn--primary" type="submit">
-                            Book This Trip
-                        </button>
-                    </form>
+                <div class="container">
+                    <div class="slider">
+                        <div class="slide">
+                            <h1>Trek More, Worry Less</h1>
+                            <p>
+                                The journey of a thousand miles begins with a single step.
+                            </p>
+                            <form action="booking.html">
+                                <button class="btn btn--primary" type="submit">
+                                    Book This Trip
+                                </button>
+                            </form>
+                        </div>
+                        <div class="slide">
+                            <h1>New Slide</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quia?
+                            </p>
+                            <form action="booking.html">
+                                <button class="btn btn--primary" type="submit">
+                                    Book This Trip
+                                </button>
+                            </form>
+                        </div>
+                        <button class="btn btn-next">></button>
+                        <button class="btn btn-prev"><</button>
+                        <script src="./js/slider.js"></script>
+                    </div>
                 </div>
             </div>
         </section>
@@ -473,6 +490,9 @@
         searchIcon.addEventListener('click', () => {
             search.classList.toggle('active');
         })
+    </script>
+    <script>
+
     </script>
     <script src="./js/tabs.js"></script>
 </body>

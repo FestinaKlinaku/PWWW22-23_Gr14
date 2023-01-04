@@ -2,14 +2,49 @@
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
-    .change-banner {
+    .slider {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-prev, .btn-next {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+        z-index: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 18px;
+      }
+      .btn-prev:active, .btn-next:active {
+        transform: scale(1.1);
+      }
+      .btn-prev {
+        top: 45%;
+        left: 2%;
+      }
+      
+      .btn-next {
+        top: 45%;
+        right: 2%;
+      }
+    .slide {
         padding: 0 260px;
         padding-top: 170px;
         padding-bottom: 170px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        transition: all 0.5s;
         h1 {
             font-size: 106px;
             letter-spacing: -4px;

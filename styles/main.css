@@ -177,16 +177,50 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .change-banner {
+.banner .slider {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.banner .btn-prev, .banner .btn-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.banner .btn-prev:active, .banner .btn-next:active {
+  transform: scale(1.1);
+}
+.banner .btn-prev {
+  top: 45%;
+  left: 2%;
+}
+.banner .btn-next {
+  top: 45%;
+  right: 2%;
+}
+.banner .slide {
   padding: 0 260px;
   padding-top: 170px;
   padding-bottom: 170px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  transition: all 0.5s;
 }
-.banner .change-banner h1 {
+.banner .slide h1 {
   font-size: 106px;
   letter-spacing: -4px;
   line-height: 106px;
@@ -196,7 +230,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
-.banner .change-banner p {
+.banner .slide p {
   font-size: 25px;
   line-height: 35px;
   color: #FFFFFF;
@@ -204,7 +238,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
-.banner .change-banner .btn {
+.banner .slide .btn {
   width: 200px;
   height: 60px;
   border: none;
@@ -216,10 +250,10 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.banner .change-banner .btn--primary {
+.banner .slide .btn--primary {
   background-color: #e7d5ad;
 }
-.banner .change-banner .btn--primary:hover {
+.banner .slide .btn--primary:hover {
   background-color: #FFFFFF;
 }
 
@@ -679,11 +713,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.recommendations .grid-container .img-wrapper:hover {
-  transform: scale(1.1);
-  transition-duration: 0.3s;
-  cursor: pointer;
 }
 
 .blog-posts {
