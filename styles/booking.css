@@ -16,6 +16,7 @@ h2 {
 .form-wrapper {
   background-color: #0b131d;
   padding: 30px;
+  position: relative;
 }
 
 form {
@@ -46,5 +47,54 @@ select {
 }
 
 input[type="submit"] {
+  margin-top: 20px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  color: #e7d5ad;
+  background-color: #3a5065;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e7d5ad;
+  color: #3a5065;
+}
+
+.ticket {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 30%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 35px black;
+  padding: 30px;
+  display: none;
+}
+
+#show {
+  padding: 10px;
+  width: 300px;
   margin-top: 30px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  color: #e7d5ad;
+  background-color: #3a5065;
+  font-weight: 700;
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+#show:hover {
+  background-color: #e7d5ad;
+  color: #3a5065;
 }

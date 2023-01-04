@@ -64,14 +64,25 @@
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email" required><br>
                         <label for="destination">Where are you going?</label>
-                        <select name="destination" id="destination">
+                        <select name="destination" id="destination" required>
                             <option value="1">Nepal</option>
                             <option value="2">Tibet</option>
                             <option value="3">India</option>
                             <option value="4">Bhutan</option>
                         </select>
+                        <br>
+                        <label for="start">When are you going?</label>
+                        <input type="date" id="start" name="trip-start" value="2023-01-04" min="2023-01-04" max="2023-12-31" required>
+                        <br>
+                        <label for="duration">How many days are you staying</label>
+                        <input type="number" name="duration" id="duration" min="1" required>
+                        <br>
+                        <button id="show">Show Ticket Price</button>
                         <input type="submit" value="Send">
                     </form>
+                    <div class="ticket">
+                        <p>Total price: </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,7 +134,7 @@
                     <address>
                         <i class="fa fa-map-marker"></i> 203 West Pineknoll Drive <br>
                         Bristow, VA 20136 <br>
-                        <i class="fa fa-phone" aria-hidden="true"></i> +014 1 1234567, +014 1 1234567 <br>
+                        <i class="fa fa-phone"></i> +014 1 1234567, +014 1 1234567 <br>
                         <i class="fa fa-envelope"></i> info@templatesjungle.com
                     </address>
                     <ul class="social-nav">
@@ -157,6 +168,40 @@
         searchIcon.addEventListener('click', () => {
             search.classList.toggle('active');
         })
+    </script>
+    <script>
+        var duration = document.querySelector('#duration')
+
+        duration.addEventListener('input', write)
+
+        function write() {
+            var days = calculate();
+            console.log(days);
+            var totalPrice = document.querySelector('.ticket p');
+            totalPrice.innerText = 'Total price: ' + days;
+        }
+
+        function calculate() {
+            var val = duration.value;
+            var valAsNumber = parseFloat(val);
+            const priceForOneDay = 66.6;
+            var price = valAsNumber * priceForOneDay;
+            return price;
+        }
+
+        const ticket = document.querySelector('.ticket');
+
+        function showTicket(e) {
+            e.preventDefault();
+            if (ticket.style.display == 'none') {
+                ticket.style.display = 'block';
+            }
+            else {
+                ticket.style.display = 'none';
+            }
+        }
+
+        document.getElementById('show').addEventListener('click', showTicket);
     </script>
 </body>
 </html>
