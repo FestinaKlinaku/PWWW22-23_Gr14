@@ -1,0 +1,12 @@
+.blog-posts {
+    background-image:  url('../images/bg-blog.png'), linear-gradient(180deg, #fef8ec 10%, #0b131d 10%);
+    margin-top: 100px;
+}
+
+.grid-container {
+    row-gap: 70px;
+}
+
+.blog-posts h2::before {
+    height: 0;
+}
