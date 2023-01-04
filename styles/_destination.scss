@@ -4,6 +4,9 @@
     h2 {
         @include heading;
         padding-bottom: 80px;
+        &::before {
+            background-color: #ffffff;
+        }
     }
     .grid-container {
         display: grid;

@@ -317,6 +317,9 @@ body {
   height: 50px;
   background-color: black;
 }
+.featured-packages h2::before {
+  background-color: #ffffff;
+}
 .featured-packages .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -439,6 +442,9 @@ body {
   width: 4px;
   height: 50px;
   background-color: black;
+}
+.destinations h2::before {
+  background-color: #ffffff;
 }
 .destinations .grid-container {
   display: grid;

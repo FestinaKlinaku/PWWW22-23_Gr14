@@ -9,6 +9,9 @@
     h2 {
         @include heading;
         margin-bottom: 80px;
+        &::before {
+            background-color: #ffffff;
+        }
     }
     .grid-container {
         display: grid;
