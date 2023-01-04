@@ -1,0 +1,39 @@
+.activities {
+    padding: 100px 50px;
+    background: #fef8ec;
+  }
+  
+h2 {
+font-size: 51px;
+line-height: 30px;
+color: black;
+font-weight: 500;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+margin-bottom: 80px;
+}
+
+.activities-wrapper {
+background-color: #0b131d;
+padding: 30px;
+position: relative;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #cdcdcd;
+    font-family: 'Lora', sans-serif;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+}

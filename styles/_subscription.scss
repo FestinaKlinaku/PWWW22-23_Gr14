@@ -54,6 +54,11 @@
                 font-weight: 700;
                 font-family: $specialFont;
                 background: $accent2;
+                cursor: pointer;
+                &:hover {
+                    background-color: $accent1;
+                    color: $accent2;
+                }
             }
         }
         .subscription__image {
